@@ -1,0 +1,96 @@
+body{
+    background-color: rgb(244, 240, 210);
+}
+.header{
+    position: fixed;
+    display: flex;
+    background-color:rgb(248, 212, 159);
+    padding: 20px;
+    justify-content:space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+}
+.marka{
+    color: orangered;
+    font-size: 20px;
+}
+.link{
+    text-decoration: none;
+    font-size: 16px ;
+    font-weight: bold;
+    color: black;
+    border: solid rgb(242, 179, 84) 1px;
+    padding: 10px;
+    margin: 10px;
+}
+.link:hover{
+    background-color: orangered;
+    border: solid orangered 1px;
+}
+.modal-container{
+    background-color: rgba(0,0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+
+}
+.modal-container.show{
+    pointer-events: auto;
+    opacity: 1;
+    
+}
+.modal{
+    background-color: blanchedalmond;
+    padding: 30px 50px;
+    width: 600px;
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0, 0, 0.2);
+
+}
+
+.close-window{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid orangered;
+    border-radius: 8px;
+    padding: 10px;
+    /* padding: 5px; */
+    width: 36px;
+    margin: 0 auto;
+    color: aliceblue;
+    background-color: orangered;
+
+
+}
+.close-window:hover{
+    background-color: bisque;
+    
+    color: rgb(94, 94, 95);
+}
+#open{
+    cursor: pointer;
+}
+.image{
+    max-width: 100px;
+    border-radius: 36px;
+}
+.paragraph{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 25px;
+    color: rgb(94, 94, 95);
+
+}
